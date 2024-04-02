@@ -60,10 +60,6 @@ class PostResource extends Resource
                             ->relationship('author', 'name')
                             ->searchable()
                             ->required(),
-                        Select::make('categories')
-                            ->multiple()
-                            ->relationship('categories', 'title')
-                            ->searchable(),
                     ]
                 ),
             ]);
